@@ -47,7 +47,7 @@
 		4456FCA61938FEA900A290A4 /* FISAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FISAppDelegate.m; sourceTree = "<group>"; };
 		4456FCA81938FEA900A290A4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4456FCAE1938FEA900A290A4 /* ApplesAndHolidaysTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApplesAndHolidaysTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4456FCAF1938FEA900A290A4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		4456FCAF1938FEA900A290A4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/MacOSX.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		4456FCB71938FEA900A290A4 /* ApplesAndHolidaysTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ApplesAndHolidaysTests-Info.plist"; sourceTree = "<group>"; };
 		4456FCB91938FEA900A290A4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4456FCBB1938FEA900A290A4 /* ApplesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApplesTests.m; sourceTree = "<group>"; };

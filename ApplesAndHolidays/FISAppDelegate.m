@@ -20,6 +20,15 @@
     return YES;
 }
 
++ (NSMutableArray *)applePickerWithFruits:(NSMutableArray *)fruits
+{
+    NSString *apple = @"apple";
+    NSPredicate *appicate = [NSPredicate predicateWithFormat:@"SELF == %@", apple];
+    NSArray *applefiltered = [fruits filteredArrayUsingPredicate:appicate];
+    NSMutableArray *apples = [NSMutableArray arrayWithArray:applefiltered];
+    return apples;
+}
+
 + (NSMutableDictionary *)holidaySupplies
 {
     
@@ -37,6 +46,31 @@
               @"fall" : fall,
               @"spring" : spring}];
 }
+
++ (NSString *)secondSupplyFourthOfJuly{
+    return [self holidaySupplies][@"summer"][@"fourthOfJuly"][1];
+}
++ (NSMutableDictionary *)addSupply:(NSString *)supply
+                   toWinterHoliday:(NSString *)holiday
+{
+    NSMutableDictionary *winterSupplies = [self holidaySupplies];
+    [winterSupplies[@"winter"][holiday] addObject:supply];
+    return winterSupplies;
+}
+
++ (NSMutableDictionary *)addSupplyToMemorialDay:(NSString *)supply{
+    NSMutableDictionary *memorialSupply = [self holidaySupplies];
+    [memorialSupply [@"spring"][@"memorialDay"] addObject:supply];
+    return memorialSupply;
+}
+
++ (NSMutableDictionary *)addHoliday:(NSString *)holiday toSeason:(NSString *)season withSupplies:(NSArray *)newHolidaySupplies
+{
+    NSMutableDictionary *newHoly = [self holidaySupplies];
+    newHoly [season][holiday]= newHolidaySupplies;
+    return newHoly;
+}
+
 
 
 @end
